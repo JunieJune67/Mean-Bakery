@@ -1,0 +1,20 @@
+<%= erb :header %>
+<% counter = 1 %>
+<h2 class = "centertext header">Cookies</h2>
+<div class = "container row productdisplay">
+<% $brochure.each do |brochure|%>
+  <% if brochure.treat == 'Cookie' %>
+  <div class="col-md-4 centertext">
+    <div class = '<%= brochure.treat %>-<%= counter %>'>
+      <div class = "productimage" style = "background-image: url('<%= brochure.image %>')"></div>
+      <h4><%= brochure.name %></h4>
+      <p><%= brochure.description %></p>
+      <h6>$ <%= (brochure.price) %></h6>
+    </div>
+  </div>
+  <% counter += 1 %>
+  <% end %>
+<% end %>
+</div>
+    <%= erb :form %>
+    <%= erb :footer %>

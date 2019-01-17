@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css?family=Freckle+Face|Hanalei+Fill|Knewave|Shojumaru|Six+Caps');
+
+html {
+   /* background-image: url("images/ooze.png") ; */
+  background-repeat: no-repeat;
+  background-color: #509138;
+  
+  
+
+}
+
+ header {
+    background-image: url("assets/left_corner_img.png");
+    background-repeat: no-repeat;
+    height: 15em;
+    text-align: center;
+    color: #0A1A07;
+    width: 90em; 
+ }
+
+
+
+
+
+ h1 {
+    font-family: 'Freckle Face', cursive;
+    color: #509138;
+    font-size: 66px;
+    padding: 58px; 
+} 
+
+ a {
+    color: #509138;
+    font-size: 21px;
+    z-index: 3;
+    
+} 
+ a:hover {
+    color: #74D86A;
+} 
+ nav ul li{
+    font-family: 'Shojumaru', cursive;
+    color: #0A1A07;
+    font-size: 20px;
+     margin: 0 20px;
+    display: inline-block;
+    
+}  
+ nav ul li:visited{
+    color: #0A1A07;
+    transition: ease-out 30px;
+    
+} 
+
+
+ul {
+    color: aliceblue;
+    list-style: none;
+    
+}
+
+ nav ul li:hover {
+    background-color: aliceblue;
+    text-decoration: none;
+    color: #509138;
+}
+
+.productimage {
+   height: 200px;
+   margin-bottom: 1em;
+   background-position: bottom;
+ }
+
+ .container .row .sweethome {
+top: 10%;
+position: relative;
+ }
+
+ h3 {
+   font-family: 'Hanalei Fill', cursive;
+
+ }
+
+ article {
+   font-family: 'Knewave', cursive;
+   color: #509138;
+ }
+
+  
+
+
+
+    
+
+
+/* font-family: 'Freckle Face', cursive;
+font-family: 'Hanalei Fill', cursive;
+font-family: 'Shojumaru', cursive;
+font-family: 'Knewave', cursive;
+font-family: 'Six Caps', sans-serif; */
+
+
+
+
+
+

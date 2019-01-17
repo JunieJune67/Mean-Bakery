@@ -16,10 +16,10 @@ class Newsletter < ActionMailer::Base
     def welcome(recipient)
         @recipient = recipient
         mail(to: recipient,
-            subject: "[Signed up} Welcome #{recipient}")
+        subject: "[Signed up] Welcome #{recipient}")
     end
 end
 
-Newsletter.welcome("nanmar17@gmail.com").deliver_now
+ #Newsletter.welcome("jhart6689@gmail.com").deliver_now
             
         

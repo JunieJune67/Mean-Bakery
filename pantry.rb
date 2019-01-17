@@ -1,4 +1,7 @@
-class G_pantry
+
+
+
+class Pantry
     attr_accessor :name, :image, :description, :price, :treat
     def initialize(name, image, description, price)
         @name = name
@@ -8,30 +11,49 @@ class G_pantry
     end
 end
 
-class G_cookies < G_pantry
+class Cookie < Pantry
     attr_accessor :name, :image, :description, :price, :treat
     def initialize(name, image, description, price)
        super(name,image,description,price)
-        @treat = 'G_cookies'
+        @treat = 'Cookie'
         $brochure << self
     end
 end
 
-class G_cakes < G_pantry
+class Cake < Pantry
     attr_accessor :name, :image, :description, :price, :treat
     def initialize(name, image, description, price)
        super(name,image,description,price)
-        @treat = 'G_cakes'
+        @treat = 'Cake'
         $brochure << self
     end
 end
 
-class G_muffins < G_pantry
+class Muffin < Pantry
     attr_accessor :name, :image, :description, :price, :treat
     def initialize(name, image, description, price)
        super(name,image,description,price)
-        @treat = 'G_muffins'
+        @treat = 'Muffin'
         $brochure << self
     end
 end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

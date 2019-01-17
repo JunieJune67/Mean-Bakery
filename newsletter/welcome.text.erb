@@ -1,0 +1,26 @@
+Hey Green Teat Lovers !!
+
+Thanks For Subscribing, Now Your In For Some Green Dicounted treats!
+
+
+<% $brochure.each do |bro| %>
+<% if bro.treat == 'Cake' %>
+<%= bro.name %>
+<%= bro.description %>
+$ <%= (bro.price) %>
+
+<% end %>
+<% if bro.treat == 'Cookie' %>
+<%= bro.name %>
+<%= bro.description %>
+$ <%= (bro.price) %>
+
+<% end %>
+<% if bro.treat == 'Muffin' %>
+<%= bro.name %>
+<%= bro.description %>
+$ <%= (bro.price) %>
+
+<% end %>
+<% end %>
+Be sure to stop by soon!

@@ -1,12 +1,45 @@
-<!DOCTYPE HTML>
-<meta charset="UTF-8">
-<head>
- <title></title>
-</head>
+<h1>Hey Green Teat Lovers !!</h1>
 
-<body>
+<h5>Thanks For Subscribing, Now Your In For Some Green Dicounted treats!</h5>
 
-</body>
-
-
-</HTML>
+<h3 style = "text-align: center;">Our Green Treats</h3>
+<div style = "margin: auto;" class = "row">
+<% counter = 1 %>
+<% $brochure.each do |bro|%>
+  <% if bro.treat == 'Cake' %>
+  <div class="col-12 col-sm-4">
+    <div class = '<%= bro.treat %>-<%= counter %>'>
+      <div class = "show" style = "background-image: url('<%= bro.image %>')"></div>
+      <h4><%= bro.name %></h4>
+      <p><%= bro.description %></p>
+      <h6>$ <%= (bro.price) %></h6>
+    </div>
+  </div>
+  <% counter += 1 %>
+  <% end %>
+  <% counter = 1 %>
+  <% if bro.treat == 'Cookie' %>
+  <div class="col-12 col-sm-4">
+    <div class = '<%= bro.treat %>-<%= counter %>'>
+      <div class = "show treat" style = "background-image: url('<%= bro.image %>')"></div>
+      <h4><%= bro.name %></h4>
+      <p><%= bro.description %></p>
+      <h6>$ <%= (bro.price) %></h6>
+    </div>
+  </div>
+  <% counter += 1 %>
+  <% end %>
+  <% counter = 1 %>
+  <% if bro.treat == 'Muffin' %>
+  <div class="col-12 col-sm-4">
+    <div class = '<%= bro.treat %>-<%= counter %>'>
+      <div class = "productimage" style = "background-image: url('<%= bro.image %>')"></div>
+      <h4><%= bro.name %></h4>
+      <p><%= bro.description %></p>
+      <h6>$ <%= (bro.price) %></h6>
+    </div>
+  </div>
+  <% counter += 1 %>
+  <% end %>
+<% end %>
+</div>
